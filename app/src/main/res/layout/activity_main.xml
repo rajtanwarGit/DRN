@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hey!"
+        android:textColor="#111111"
+        android:textStyle="bold"
+        android:layout_marginTop="50dp"
+        android:textSize="40sp"
+        android:padding="20dp"
+        tools:layout_editor_absoluteX="43dp"
+        tools:layout_editor_absoluteY="30dp" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/morning"
+        android:layout_width="393dp"
+        android:layout_height="144dp"
+        android:layout_below="@+id/textView2"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="33dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        app:cardBackgroundColor="#ffffff"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="10dp"
+        app:cardMaxElevation="12dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true">
+
+        <TextView
+            android:id="@+id/mornin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Morning"
+            android:textSize="30sp"
+            android:padding="10dp"
+            android:layout_marginStart="10dp"
+            android:textColor="#111111"/>
+
+        <TextView
+            android:id="@+id/mornin_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="All Done!"
+            android:layout_marginTop="50dp"
+            android:layout_marginStart="15dp"
+            android:textSize="15sp" />
+
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/morning_gif"
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            android:src="@drawable/morning_gif"
+            android:layout_gravity="right"
+            android:layout_marginHorizontal="35dp"
+            android:layout_marginTop="21dp"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/evening"
+        android:layout_width="393dp"
+        android:layout_height="144dp"
+        android:layout_below="@+id/textView2"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="179dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        app:cardBackgroundColor="#f2d37e"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="10dp"
+        app:cardMaxElevation="12dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Evening"
+            android:textSize="30sp"
+            android:padding="10dp"
+            android:layout_marginStart="10dp"
+            android:textColor="#111111"/>
+
+        <TextView
+            android:id="@+id/evenin_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="2 left"
+            android:layout_marginTop="50dp"
+            android:layout_marginStart="15dp"
+            android:textSize="15sp" />
+
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/evening_gif"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:src="@drawable/evening_gif"
+            android:layout_gravity="right"
+            android:layout_marginRight="50dp"
+            android:layout_marginVertical="10dp"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/night"
+        android:layout_width="393dp"
+        android:layout_height="144dp"
+        android:layout_below="@+id/textView2"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="316dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        app:cardBackgroundColor="#464c80"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="10dp"
+        app:cardMaxElevation="12dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Night"
+            android:textSize="30sp"
+            android:padding="10dp"
+            android:layout_marginStart="10dp"
+            android:textColor="#111111"/>
+
+        <TextView
+            android:id="@+id/night_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="10 left"
+            android:layout_marginTop="50dp"
+            android:layout_marginStart="15dp"
+            android:textSize="15sp" />
+
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/night_gif"
+            android:layout_width="130dp"
+            android:layout_height="70dp"
+            android:src="@drawable/night_gif"
+            android:layout_gravity="right"
+            android:layout_marginRight="30dp"
+            android:layout_marginVertical="15dp"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_alignEnd="@+id/night"
+        android:layout_marginTop="533dp"
+        android:layout_marginEnd="180dp"
+        android:text="DRN+"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/textView2"
+        android:layout_alignEnd="@+id/night"
+        android:layout_marginStart="-10dp"
+        android:layout_marginTop="534dp"
+        android:layout_marginEnd="145dp"
+        app:srcCompat="@drawable/logo" />
+
+
+</RelativeLayout>
